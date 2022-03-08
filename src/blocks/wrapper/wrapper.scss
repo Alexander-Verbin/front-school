@@ -1,0 +1,8 @@
+.wrapper {
+    &__content {
+        max-width: 98%;
+        margin: 0 auto;
+        padding: 10px 14px;
+        background: linear-gradient(180deg, rgba(3, 56, 244, 0.71) 0%, rgba(224, 37, 206, 0.79) 93.75%);
+    }
+}

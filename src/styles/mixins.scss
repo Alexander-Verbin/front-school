@@ -5,10 +5,6 @@
   transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-$main-color: #332f2f;
-$button-color: #009688;
-$background-color: #f5f8f9;
-
 /* Миксин замены цвета placeholder у input.
 Нужно добавить в стилях элемента конструкцию вида @include placeholder(#000); */
 @mixin placeholder($color, $opacity: 1) {
