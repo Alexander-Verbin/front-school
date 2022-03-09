@@ -8,5 +8,24 @@
     &__name {
         display: flex;
         flex-direction: column;
+        font-family: Montserrat;
+        font-size: px-to-em(25);
+        line-height: px-to-per(30, 25);
+        color: #cecaca;
+        &surname {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: px-to-em(35);
+            line-height: px-to-per(43, 35);
+            color: #ffffff;
+        }
+        &post {
+            font-family: Montserrat;
+            font-weight: bold;
+            font-size: px-to-em(15);
+            line-height: px-to-per(18, 15);
+            color: #cecaca;
+        }
     }
 }
