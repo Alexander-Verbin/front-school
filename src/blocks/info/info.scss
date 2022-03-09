@@ -1,0 +1,12 @@
+.info {
+    display: flex;
+    padding: 10px 26px 20px 18px;
+    &__image {
+        object-fit: contain;
+        margin-right: 22px;
+    }
+    &__name {
+        display: flex;
+        flex-direction: column;
+    }
+}
