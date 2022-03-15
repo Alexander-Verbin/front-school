@@ -7,10 +7,10 @@
         margin: 4px;
         background: rgba(196, 196, 196, 0.35);
         border-radius: 10px;
-    }
-    &__content:hover {
-        transform: scale(1.04);
-        @include transition;
+        &:hover {
+            transform: scale(1.04);
+            @include transition;
+        }
     }
     &__image {
         margin-right: 34px;
