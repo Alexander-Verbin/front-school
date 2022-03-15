@@ -1,3 +1,29 @@
 .contact {
-  
+    &__content {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 10px 30px;
+        margin: 4px;
+        background: rgba(196, 196, 196, 0.35);
+        border-radius: 10px;
+        &:hover {
+            transform: scale(1.04);
+            @include transition;
+        }
+    }
+    &__image {
+        margin-right: 34px;
+    }
+    &__link {
+        text-decoration: none;
+    }
+    &__text {
+        display: block;
+        font-family: "Calibri";
+        font-weight: 400;
+        font-size: px-to-em(15);
+        line-height: px-to-per(18, 15);
+        color: #ffffff;
+    }
 }
