@@ -14,6 +14,7 @@
     /* Modern Browsers */ url("../fonts/calibri/calibri.woff2") format("woff2"); /* Modern Browsers */
   font-style: normal;
 }
+$main-color: #ffffff;
 /* Plugins */
 
 /* Blocks */
@@ -55,5 +56,4 @@ p {
 @import "./src/blocks/info/info";
 @import "./src/blocks/contacts/contacts";
 @import "./src/blocks/contact/contact";
-
-@import './src/blocks/knowledge/knowledge';
+@import "./src/blocks/knowledge/knowledge";
