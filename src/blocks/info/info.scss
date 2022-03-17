@@ -1,6 +1,8 @@
 .info {
     display: flex;
-    padding: 10px 26px 20px 18px;
+    padding-right: 26px;
+    padding-left: 18px;
+    margin-bottom: 20px;
     &__image {
         object-fit: contain;
         margin-right: 22px;
