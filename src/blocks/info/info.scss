@@ -1,6 +1,8 @@
 .info {
     display: flex;
-    padding: 10px 26px 20px 18px;
+    padding-right: 26px;
+    padding-left: 18px;
+    margin-bottom: 20px;
     &__image {
         object-fit: contain;
         margin-right: 22px;
@@ -18,7 +20,7 @@
             font-weight: 500;
             font-size: px-to-em(35);
             line-height: px-to-per(43, 35);
-            color: #ffffff;
+            color: $main-color;
         }
         &post {
             font-family: Montserrat;
