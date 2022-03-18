@@ -2,7 +2,7 @@
     &__content {
         background: rgba(196, 196, 196, 0.35);
         border-radius: 10px;
-        margin: 0px 18px 18px;
+        margin: 0px 18px 12px;
         padding-top: 6px;
         padding-bottom: 10px;
     }
@@ -12,7 +12,7 @@
         font-size: px-to-em(14);
         line-height: px-to-per(18, 14);
         color: $main-color;
-        padding-left: 21px;
+        padding-left: 22px;
     }
     &__item {
         display: flex;

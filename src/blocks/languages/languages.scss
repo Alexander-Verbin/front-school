@@ -1,3 +1,32 @@
 .languages {
-  
+    &__content {
+        background: rgba(196, 196, 196, 0.35);
+        border-radius: 10px;
+        margin: 0px 18px 12px;
+        padding-top: 6px;
+        padding-bottom: 10px;
+    }
+    &__title {
+        font-family: "Montserrat";
+        font-weight: 700;
+        font-size: px-to-em(14);
+        line-height: px-to-per(18, 14);
+        color: $main-color;
+        padding-left: 22px;
+    }
+    &__block {
+        display: flex;
+        align-items: center;
+    }
+    &__language {
+        padding-left: 22px;
+        align-items: center;
+        font-family: "Calibri";
+        font-weight: 400;
+        font-size: px-to-em(14);
+        line-height: px-to-per(18, 14);
+        color: #fafafa;
+        margin-right: 4px;
+        min-width: 62px;
+    }
 }
