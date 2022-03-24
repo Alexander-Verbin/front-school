@@ -1,3 +1,30 @@
 .social {
-  
+    &__content {
+        background: rgba(196, 196, 196, 0.35);
+        border-radius: 10px;
+        margin: 0px 18px 12px;
+        padding-top: 6px;
+        padding-bottom: 20px;
+    }
+    &__title {
+        font-family: "Montserrat";
+        font-weight: 700;
+        font-size: px-to-em(14);
+        line-height: px-to-per(18, 14);
+        color: $main-color;
+        padding-left: 22px;
+    }
+    &__link {
+        display: block;
+        text-decoration: none;
+        padding-left: 22px;
+        font-family: "Calibri";
+        font-weight: 400;
+        font-size: px-to-em(14);
+        line-height: px-to-per(18, 14);
+        color: #fafafa;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
