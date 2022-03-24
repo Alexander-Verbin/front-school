@@ -15,9 +15,7 @@
         padding-left: 22px;
     }
     &__link {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        display: block;
         text-decoration: none;
         padding-left: 22px;
         font-family: "Calibri";
@@ -25,5 +23,8 @@
         font-size: px-to-em(14);
         line-height: px-to-per(18, 14);
         color: #fafafa;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
