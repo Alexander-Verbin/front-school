@@ -1,5 +1,7 @@
 .wrapper {
     &__content {
+        display: flex;
+        justify-content: center;
         max-width: 98%;
         margin: 0 auto;
         padding: 10px 14px;

@@ -1,0 +1,25 @@
+.stitle {
+    &__content {
+        display: flex;
+        align-items: center;
+        margin: 0 14px 12px;
+    }
+    &__title {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        color: $main-color;
+        background: $stitle-color;
+        border-radius: 5px;
+        padding: 4px 30px;
+        max-width: 154px;
+        position: relative;
+    }
+    &__line {
+        background-color: $stitle-color;
+        width: 142px;
+        height: 1px;
+    }
+}

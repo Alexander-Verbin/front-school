@@ -15,6 +15,7 @@
   font-style: normal;
 }
 $main-color: #ffffff;
+$stitle-color: #545454;
 /* Plugins */
 
 /* Blocks */
@@ -58,8 +59,10 @@ p {
 @import "./src/blocks/contact/contact";
 @import "./src/blocks/knowledge/knowledge";
 
-@import './src/blocks/languages/languages';
-@import './src/blocks/grey/grey';
-@import './src/blocks/white/white';
-@import './src/blocks/social/social';
-@import './src/blocks/hobbies/hobbies';
+@import "./src/blocks/languages/languages";
+@import "./src/blocks/grey/grey";
+@import "./src/blocks/white/white";
+@import "./src/blocks/social/social";
+@import "./src/blocks/hobbies/hobbies";
+@import "./src/blocks/sidebar/sidebar";
+@import "./src/blocks/stitle/stitle";
