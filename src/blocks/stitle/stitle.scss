@@ -2,7 +2,7 @@
     &__content {
         display: flex;
         align-items: center;
-        margin: 0 14px 12px;
+        margin-bottom: 12px;
     }
     &__title {
         font-family: "Montserrat";
@@ -12,6 +12,7 @@
         line-height: 18px;
         color: $main-color;
         background: $stitle-color;
+        text-transform: uppercase;
         border-radius: 5px;
         padding: 4px 30px;
         max-width: 154px;
