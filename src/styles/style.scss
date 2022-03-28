@@ -16,6 +16,7 @@
 }
 $main-color: #ffffff;
 $stitle-color: #545454;
+$sidebar-color: #343434;
 /* Plugins */
 
 /* Blocks */
@@ -67,4 +68,4 @@ p {
 @import "./src/blocks/sidebar/sidebar";
 @import "./src/blocks/stitle/stitle";
 
-@import './src/blocks/exp/exp';
+@import "./src/blocks/exp/exp";
