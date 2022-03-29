@@ -1,3 +1,27 @@
 .edu {
-  
+    &__content {
+        margin: 0 14px 12px;
+    }
+    &__college {
+        font-family: "Calibri";
+        font-weight: 700;
+        font-size: px-to-em(14);
+        line-height: px-to-per(18, 14);
+        color: $sidebar-color;
+    }
+    &__campus {
+        font-family: "Calibri";
+        font-weight: 400;
+        font-size: px-to-em(14);
+        line-height: px-to-per(18, 14);
+        color: $sidebar-color;
+    }
+    &__date {
+        font-family: "Calibri";
+        font-weight: 400;
+        font-size: px-to-em(9);
+        line-height: px-to-per(18, 9);
+        color: #73808d;
+        margin-bottom: 12px;
+    }
 }
