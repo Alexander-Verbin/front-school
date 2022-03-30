@@ -15,8 +15,7 @@
         text-transform: uppercase;
         border-radius: 5px;
         padding: 4px 30px;
-        max-width: 154px;
-        position: relative;
+        min-width: 154px;
     }
     &__line {
         background-color: $stitle-color;
