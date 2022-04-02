@@ -1,15 +1,17 @@
 .info {
     display: flex;
-    padding-right: 26px;
-    padding-left: 18px;
-    margin-bottom: 20px;
+    padding-left: 10px;
+    margin-bottom: 4px;
     &__image {
         object-fit: contain;
+        margin-top: 4px;
         margin-right: 22px;
+        transform: scale(0.9);
+    }
+    &__info{
+        margin-top: 14px;
     }
     &__name {
-        display: flex;
-        flex-direction: column;
         font-family: Montserrat;
         font-size: px-to-em(25);
         line-height: px-to-per(30, 25);
@@ -24,9 +26,9 @@
         }
         &post {
             font-family: Montserrat;
-            font-weight: bold;
+            font-weight: 700;
             font-size: px-to-em(15);
-            line-height: px-to-per(18, 15);
+            line-height: (18,15);
             color: #cecaca;
         }
     }
