@@ -1,11 +1,11 @@
 .info {
     display: flex;
-    padding-left: 10px;
-    margin-bottom: 4px;
+    margin-left: -8px;
+    margin-bottom: 10px;
     &__image {
         object-fit: contain;
         margin-top: 4px;
-        margin-right: 22px;
+        margin-right: 10px;
         transform: scale(0.9);
     }
     &__info{
@@ -28,7 +28,7 @@
             font-family: Montserrat;
             font-weight: 700;
             font-size: px-to-em(15);
-            line-height: (18,15);
+            line-height: px-to-per(18,15);
             color: #cecaca;
         }
     }

@@ -2,7 +2,7 @@
     &__content {
         background: rgba(196, 196, 196, 0.35);
         border-radius: 10px;
-        margin: 0px 18px 12px;
+        margin-bottom: 4px;
         padding-top: 6px;
         padding-bottom: 20px;
     }
@@ -12,16 +12,16 @@
         font-size: px-to-em(14);
         line-height: px-to-per(18, 14);
         color: $main-color;
-        padding-left: 22px;
+        padding-left: 14px;
     }
     &__link {
         display: block;
         text-decoration: none;
-        padding-left: 22px;
+        padding-left: 16px;
         font-family: "Calibri";
         font-weight: 400;
         font-size: px-to-em(14);
-        line-height: px-to-per(18, 14);
+        line-height: 104%;
         color: #fafafa;
         &:hover {
             text-decoration: underline;
