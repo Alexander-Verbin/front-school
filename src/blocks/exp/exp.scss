@@ -1,6 +1,6 @@
 .exp {
     &__content {
-        margin: 0 14px 12px;
+        margin: 0 0 12px 10px;
     }
     &__company {
         font-family: "Calibri";
@@ -13,21 +13,21 @@
         font-family: "Calibri";
         font-weight: 400;
         font-size: px-to-em(14);
-        line-height: px-to-per(18, 14);
+        line-height: 94%;
         color: $sidebar-color;
     }
     &__date {
         font-family: "Calibri";
         font-weight: 400;
         font-size: px-to-em(9);
-        line-height: px-to-per(18, 9);
+        line-height: 170%;
         color: #73808d;
     }
     &__text {
         font-family: "Calibri";
         font-weight: 400;
         font-size: px-to-em(9);
-        line-height: px-to-per(14, 9);
+        line-height: 122%;
         color: rgba(0, 0, 0, 0.8);
         margin-bottom: 12px;
         max-width: 261px;
