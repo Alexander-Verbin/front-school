@@ -15,7 +15,7 @@
         background: $stitle-color;
         text-transform: uppercase;
         border-radius: 5px;
-        padding: 4px 30px;
+        padding: 4px 28px;
         min-width: 154px;
         white-space: nowrap;
     }
@@ -23,5 +23,39 @@
         background-color: $stitle-color;
         min-width: 142px;
         height: 1px;
+    }
+    @media screen and (max-width: 600px){
+        &__content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $stitle-color;
+            border-radius: 5px;
+            padding: 8px 28px;
+            margin-right: -10px;
+        }
+        &__content::after{
+            content: "";
+            width: 12px;
+            height: 12px;
+            border-right: 2px solid $main-color;
+            border-bottom: 2px solid $main-color;
+            transform: rotate(45deg);
+            @include transition;
+        }
+        &__title{
+            background-color: none;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 18px;
+            color: $main-color;
+            text-transform: uppercase;
+            padding: 0;
+        }
+        &__line{
+            display: none;
+        }
     }
 }

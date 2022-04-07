@@ -1,9 +1,26 @@
 .general {
+    position: relative;
     &__content {
         background: rgba(196, 196, 196, 0.3);
         border-radius: 10px;
-        max-width: 396px;
+        max-width: 296px;
         padding: 0 18px 34px 18px;
         margin-right: 6px;
+    }
+    &__skill{
+        display: none;
+    }
+    @media screen and (max-width: 600px) {
+        &__skill{
+            &--open{
+                display: block;
+                background-color: $main-color;
+                border-radius: 10px;
+                position: absolute;
+                top: 16%;
+                left: 0;
+                min-width: 268px;
+            }
+        }
     }
 }

@@ -32,4 +32,34 @@
         margin-bottom: 12px;
         max-width: 261px;
     }
+    @media screen and (max-width: 600px){
+        &__company{
+            display: none;
+            @include transition;
+            &--open{
+                display: block;
+            }
+        }
+        &__post{
+            display: none;
+            @include transition;
+            &--open{
+                display: block;
+            }
+        }
+        &__date{
+            display: none;
+            @include transition;
+            &--open{
+                display: block;
+            }
+        }
+        &__text{
+            display: none;
+            @include transition;
+            &--open{
+                display: block;
+            }
+        }
+    }
 }
