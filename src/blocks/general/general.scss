@@ -12,14 +12,15 @@
     }
     @media screen and (max-width: 600px) {
         &__skill{
+            padding: 4px 8px 4px;
             &--open{
                 display: block;
                 background-color: $main-color;
                 border-radius: 10px;
                 position: absolute;
-                top: 16%;
+                top: 120px;
                 left: 0;
-                min-width: 268px;
+                width: 268px;
             }
         }
     }

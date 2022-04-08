@@ -1,20 +1,23 @@
 mixin myskills(modifier)
   .myskills&attributes(attributes)
     .myskills__content 
-      +stitle('my skills')
-      .myskills__skills 
-        .myskills__skill  
-          img(src="img/figma.png", alt="Figma").myskills__image
-          p.myskills__text Figma 
-        .myskills__skill  
-          img(src="img/ap.png", alt="Photoshop").myskills__image
-          p.myskills__text Adobe Photoshop 
-        .myskills__skill  
-          img(src="img/ai.png", alt="illustrator").myskills__image
-          p.myskills__text Adobe illustrator 
-        .myskills__skill  
-          img(src="img/ax.png", alt="Xd").myskills__image
-          p.myskills__text Adobe Xd 
-        .myskills__skill  
-          img(src="img/des.png", alt="indesign").myskills__image
-          p.myskills__text Adobe indesign 
+      .myskills__titles
+        h2.myskills__title my skills
+        .myskills__line
+      .myskills__info
+        .myskills__skills 
+          .myskills__skill  
+            img(src="img/figma.png", alt="Figma").myskills__image
+            p.myskills__text Figma 
+          .myskills__skill  
+            img(src="img/ap.png", alt="Photoshop").myskills__image
+            p.myskills__text Adobe Photoshop 
+          .myskills__skill  
+            img(src="img/ai.png", alt="illustrator").myskills__image
+            p.myskills__text Adobe illustrator 
+          .myskills__skill  
+            img(src="img/ax.png", alt="Xd").myskills__image
+            p.myskills__text Adobe Xd 
+          .myskills__skill  
+            img(src="img/des.png", alt="indesign").myskills__image
+            p.myskills__text Adobe indesign 

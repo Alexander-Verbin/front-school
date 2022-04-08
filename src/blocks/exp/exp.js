@@ -1,5 +1,6 @@
 $(document).ready(function () {
-    $('.stitle__content').click(function () {
-        $(this).siblings('.exp__company').toggleClass('exp__company--open')
+    $('.exp__titles').click(function () {
+        $(this).siblings('.exp__info').toggleClass('exp__info--open')
+        $('.exp__titles').toggleClass('exp__titles--open')
     })
 })

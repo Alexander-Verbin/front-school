@@ -5,7 +5,7 @@ $delay: 0.05s;
         display: flex;
         justify-content: center;
         max-width: 98%;
-        height: 116vh;
+        height: 120vh;
         margin: 0 auto;
         padding: 10px 14px;
         background: linear-gradient(180deg, rgba(3, 56, 244, 0.71) 0%, rgba(224, 37, 206, 0.79) 93.75%);
@@ -14,7 +14,9 @@ $delay: 0.05s;
         display: none;
         cursor: pointer;
     }
-    @media screen and (max-width: 1500px){
+    @media screen and (max-width: 600px){
+        &__content{
+        }
         &__burg {
             position: relative;
             margin-left: 20px;
@@ -91,10 +93,9 @@ $delay: 0.05s;
         }
 
     }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 400px) {
         &__content{
-            flex-direction: column;
-            align-items: center;
+
         }
         
     }

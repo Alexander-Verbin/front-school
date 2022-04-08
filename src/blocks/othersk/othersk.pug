@@ -1,14 +1,17 @@
 mixin othersk(modifier)
   .othersk&attributes(attributes)
     .othersk__content 
-      +stitle('other skills')
-      .othersk__skills 
-        .othersk__skill  
-          img(src="img/html.png", alt="HTML 5").othersk__image
-          p.othersk__text html 5
-        .othersk__skill  
-          img(src="img/css.png", alt="CSS 3").othersk__image
-          p.othersk__text css 3
-        .othersk__skill  
-          img(src="img/js.png", alt="Javascript").othersk__image
-          p.othersk__text Javascript 
+      .othersk__titles
+        h2.othersk__title other skills
+        .othersk__line
+      .othersk__info
+        .othersk__skills 
+          .othersk__skill  
+            img(src="img/html.png", alt="HTML 5").othersk__image
+            p.othersk__text html 5
+          .othersk__skill  
+            img(src="img/css.png", alt="CSS 3").othersk__image
+            p.othersk__text css 3
+          .othersk__skill  
+            img(src="img/js.png", alt="Javascript").othersk__image
+            p.othersk__text Javascript 
