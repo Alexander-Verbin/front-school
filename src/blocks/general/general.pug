@@ -1,13 +1,16 @@
 mixin general(modifier)
   main.general&attributes(attributes)
     .general__content
+      .general__burger.js-active
+        span.general__bar
+        span.general__bar
       +info
       +contacts
       +knowledge
       +languages
       +social
       +hobbies
-      .general__skill.general__skill--open 
+      .general__skill 
         +exp
         +edu
         +myskills

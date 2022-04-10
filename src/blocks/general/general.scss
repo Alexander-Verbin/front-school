@@ -1,3 +1,5 @@
+$t: 0.2s;
+$delay: 0.05s;
 .general {
     position: relative;
     &__content {
@@ -10,7 +12,81 @@
     &__skill{
         display: none;
     }
+    &__burger {
+        display: none;
+        cursor: pointer;
+    }
     @media screen and (max-width: 600px) {
+        &__burger {
+            display: block;
+            position: absolute;
+            top: -12px;
+            right: 0;
+            transform: scale(0.3);
+            overflow: hidden;
+            padding: 15px;
+            cursor: pointer;
+            &.js-active {
+                &:before {
+                    animation: slideLeft $t $delay ease-out forwards;
+                }
+                &:after {
+                    animation: slideRight $t $delay ease-out forwards;
+                }
+                .general__bar {
+                    animation: rotate45 $t ease-out forwards;
+                    &:last-child {
+                        animation: rotate135 $t $t ease-out forwards;
+                    }
+                }
+            }
+            &.js-back {
+                &:before {
+                    transform: translateX(-120%);
+                    animation: slideBack $t $delay ease-out forwards;
+                }
+                &:after {
+                    transform: translateX(120%);
+                    animation: slideBack $t $delay ease-out forwards;
+                }
+                .general__bar {
+                    transform: rotate(-45deg);
+                    animation: rotateBack $t ease-out forwards;
+                    &:last-child {
+                        opacity: 1;
+                        transform: rotate(-135deg);
+                        animation: rotateBack $t $t ease-out forwards;
+                    }
+                }
+            }
+            &:before {
+                content: "";
+                display: block;
+                width: 75px;
+                height: 10px;
+                background: $main-color;
+            }
+            &:after {
+                content: "";
+                display: block;
+                width: 75px;
+                height: 10px;
+                background: $main-color;
+            }
+            .general__bar {
+                display: block;
+                width: 75px;
+                height: 10px;
+                background: $main-color;
+                margin: 14px 0;
+                &:last-child {
+                    opacity: 0;
+                    transform: rotate(-45deg);
+                    position: absolute;
+                    top: 25px;
+                }
+            }
+        }
         &__skill{
             padding: 4px 8px 4px;
             &--open{
