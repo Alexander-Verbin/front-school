@@ -1,17 +1,14 @@
 @import "mixins";
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 @font-face {
   font-family: "Calibri";
-  src: url("../fonts/calibri/calibri.eot"); /* IE9 Compat Modes */
-  src: url("../fonts/calibri/calibri.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/calibri/calibri.otf") format("opentype"),
-    /* Open Type Font */ url("../fonts/calibri/calibri.svg") format("svg"),
-    /* Legacy iOS */ url("../fonts/calibri/calibri.ttf") format("truetype"),
-    /* Safari, Android, iOS */ url("../fonts/calibri/calibri.woff") format("woff"),
-    /* Modern Browsers */ url("../fonts/calibri/calibri.woff2") format("woff2"); /* Modern Browsers */
+  src: url("../fonts/calibri.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/calibri.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/calibri.otf") format("opentype"),
+    /* Open Type Font */ url("../fonts/calibri.svg") format("svg"),
+    /* Legacy iOS */ url("../fonts/calibri.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/calibri.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/calibri.woff2") format("woff2"); /* Modern Browsers */
   font-style: normal;
 }
 $main-color: #ffffff;
@@ -60,8 +57,6 @@ p {
 @import "./src/blocks/contact/contact";
 @import "./src/blocks/knowledge/knowledge";
 @import "./src/blocks/languages/languages";
-@import "./src/blocks/grey/grey";
-@import "./src/blocks/white/white";
 @import "./src/blocks/social/social";
 @import "./src/blocks/hobbies/hobbies";
 @import "./src/blocks/sidebar/sidebar";

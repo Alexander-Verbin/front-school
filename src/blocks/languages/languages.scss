@@ -28,4 +28,21 @@
         color: #fafafa;
         min-width: 58px;
     }
+    &__item {
+        width: 8px;
+        height: 8px;
+        background: rgba(84, 84, 84, 0.6);
+        border-radius: 50%;
+        margin-right: 4px;
+        &:last-child{
+            margin-right: 0;
+        }
+        &--white {
+            width: 8px;
+            height: 8px;
+            background: #cecaca;
+            border-radius: 50%;
+            margin-right: 4px;
+        }
+    }
 }
