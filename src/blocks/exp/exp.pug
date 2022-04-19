@@ -1,9 +1,7 @@
 mixin exp(modifier)
   .exp&attributes(attributes)
     .exp__content 
-      .exp__titles
-        h2.exp__title experience
-        .exp__line
+      +stitle('exp','experience')
       .exp__info
         h3.exp__company Blue Moon Consultency Studio
         p.exp__post Seniour UI designer

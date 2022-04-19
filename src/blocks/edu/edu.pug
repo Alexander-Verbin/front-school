@@ -1,9 +1,7 @@
 mixin edu(modifier)
   .edu&attributes(attributes)
     .edu__content 
-      .edu__titles
-        h2.edu__title education
-        .edu__line
+      +stitle('edu','education')
       .edu__info
         h3.edu__college Bachelor of Engineering in Information Technology 
         p.edu__campus SCAT Education Campus

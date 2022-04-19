@@ -62,48 +62,6 @@
         &__content{
             margin-left: 0;
         }
-        &__titles{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: $stitle-color;
-            border-radius: 5px;
-            padding: 8px 28px;
-            cursor: pointer;
-            margin-right: -10px;
-            margin-left: 10px;
-        }
-        &__titles::after{
-            content: "";
-            width: 10px;
-            height: 10px;
-            border-right: 2px solid $main-color;
-            border-bottom: 2px solid $main-color;
-            transform: rotate(45deg);
-            @include transition;
-        }
-        &__titles--open::after {
-            content: "";
-            width: 10px;
-            height: 10px;
-            border-right: 2px solid $main-color;
-            border-bottom: 2px solid $main-color;
-            transform: rotate(225deg);
-        }
-        &__title{
-            background-color: none;
-            font-family: "Montserrat";
-            font-style: normal;
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 18px;
-            color: $main-color;
-            text-transform: uppercase;
-            padding: 0;
-        }
-        &__line{
-            display: none;
-        }
         &__skills{
             max-width: none;
         }

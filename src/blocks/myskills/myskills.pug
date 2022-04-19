@@ -1,9 +1,7 @@
 mixin myskills(modifier)
   .myskills&attributes(attributes)
     .myskills__content 
-      .myskills__titles
-        h2.myskills__title my skills
-        .myskills__line
+      +stitle('myskills','my skills')
       .myskills__info
         .myskills__skills 
           .myskills__skill  
