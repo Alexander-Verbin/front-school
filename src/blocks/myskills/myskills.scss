@@ -1,4 +1,52 @@
+@property --p {
+    syntax: '<number>';
+    inherits: true;
+    initial-value: 0;
+}
 .myskills {
+    .pie {
+        --p:20;
+        --b:5px;
+        --c:darkred;
+        --w:60px;
+        
+        width:var(--w);
+        aspect-ratio:1;
+        position:relative;
+        display:inline-grid;
+        place-content:center;
+        font-size:25px;
+        font-weight:bold;
+        font-family:sans-serif;
+    }
+    .pie:before,
+    .pie:after {
+    content:"";
+    position:absolute;
+    border-radius:50%;
+    }
+    .pie:before {
+    inset:0;
+    background:
+        radial-gradient(farthest-side,var(--c) 98%,#0000) top/var(--b) var(--b) no-repeat,
+        conic-gradient(var(--c) calc(var(--p)*1%),#0000 0);
+    -webkit-mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+            mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+    }
+    .pie:after {
+    inset:calc(50% - var(--b)/2);
+    background:var(--c);
+    transform:rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
+    }
+    .animate {
+    animation:p 1s .5s both;
+    }
+    .no-round:before {
+    background-size:0 0,auto;
+    }
+    .no-round:after {
+    content:none;
+    }
     &__content {
         margin-left: 8px;
     }
@@ -46,8 +94,11 @@
         }
     }
     &__image {
-        transform: scale(0.9);
-        margin-bottom: 4px;
+        background-color: rgba(196, 196, 196, 0.4);
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+        @include flex-dir;
     }
     &__text {
         font-family: "Montserrat";
@@ -83,4 +134,7 @@
             }
         }
     }
+}
+@keyframes p {
+    from{--p:0}
 }
