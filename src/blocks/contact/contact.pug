@@ -2,5 +2,4 @@ mixin contact(image,text)
   .contact&attributes(attributes)
     .contact__content 
       img(src=`img/${image}.svg` alt="Иконка").contact__image
-      a(href='#').contact__link
-        span.contact__text=text
+      p.contact__text=text

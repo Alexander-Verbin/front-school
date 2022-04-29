@@ -16,15 +16,19 @@
     &__image {
         margin-right: 18px;
     }
-    &__link {
-        text-decoration: none;
-    }
     &__text {
-        display: block;
         font-family: "Calibri";
         font-weight: 400;
         font-size: px-to-em(15);
         line-height: px-to-per(18, 15);
         color: $main-color;
+    }
+    @media screen and (max-width: 600px){
+        &__content{
+            max-width: 276px;
+        }
+        &__image {
+            margin-right: 40px;
+        }
     }
 }

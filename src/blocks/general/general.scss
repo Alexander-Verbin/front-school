@@ -17,11 +17,14 @@ $delay: 0.05s;
         cursor: pointer;
     }
     @media screen and (max-width: 600px) {
+        &__content{
+            min-width: 312px;
+        }
         &__burger {
             display: block;
             position: absolute;
             top: -12px;
-            right: 0;
+            right: -25px;
             transform: scale(0.3);
             overflow: hidden;
             padding: 15px;
@@ -96,7 +99,7 @@ $delay: 0.05s;
                 position: absolute;
                 top: 120px;
                 left: 0;
-                width: 268px;
+                width: 312px;
             }
         }
     }

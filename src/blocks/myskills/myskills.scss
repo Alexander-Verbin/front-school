@@ -85,12 +85,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 4px 8px 6px;
-        &:first-child{
-            margin-right: 14px;
-        }
+        margin: 4px 16px 6px;
         &:nth-child(4){
-            margin-left: 2px;
+            margin-left: 8px;
         }
     }
     &__image {
@@ -111,18 +108,18 @@
     }
     @media screen and (max-width: 600px){
         &__content{
-            margin-left: 0;
+            margin: 0;
         }
         &__skills{
             max-width: none;
         }
         &__skill{
-            margin: 10px 0 10px 0;
-            &:first-child{
-                margin-right: 6px;
+            margin: 10px 22px 10px 0;
+            &:nth-child(1){
+                margin-left: 14px;
             }
-            &:nth-child(4){
-                margin-left: 0;
+            &:nth-child(3){
+                margin-right: 0;
             }
         }
         &__info{

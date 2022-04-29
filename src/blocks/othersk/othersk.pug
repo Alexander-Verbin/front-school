@@ -1,9 +1,9 @@
 mixin othersk(modifier)
   .othersk&attributes(attributes)
     .othersk__content 
-      +stitle('othersk','other skills')
+      +stitle('othersk','Работы')
       .othersk__info
-        .othersk__skills 
+        //.othersk__skills 
           .othersk__skill
             <div class="pie animate no-round" style="--p:90;--c:#3B5999;">   
               .othersk__image
@@ -25,14 +25,7 @@ mixin othersk(modifier)
           .othersk__skill  
             <div class="pie animate no-round" style="--p:80;--c:#3B5999;">   
               .othersk__image
-                |   <svg width="25" height="30" viewBox="0 0 25 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                |     <rect width="25" height="30" fill="url(#pattern0)"/>
-                |     <defs>
-                |       <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                |         <use xlink:href="#image0_288_222" transform="translate(-0.501697) scale(0.00351515 0.0030303)"/>
-                |       </pattern>
-                |     </defs>
-                |   </svg>
+                img(src="img/javascript.png").othersk__imag
             </div>
             p.othersk__text JavaScript 
             
