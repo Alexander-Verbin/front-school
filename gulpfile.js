@@ -1,17 +1,17 @@
-const  gulp = require('gulp');
-const  del = require('del');
-const  autoprefixer = require('gulp-autoprefixer');
-const  browserSync = require('browser-sync');
-const  sass = require('gulp-sass')(require('sass'));
-const  pug = require('gulp-pug');
-const  concat = require("gulp-concat");
-const  rename = require("gulp-rename");
-const  imagemin = require('gulp-imagemin');
+const gulp = require('gulp');
+const del = require('del');
+const autoprefixer = require('gulp-autoprefixer');
+const browserSync = require('browser-sync');
+const sass = require('gulp-sass')(require('sass'));
+const pug = require('gulp-pug');
+const concat = require("gulp-concat");
+const rename = require("gulp-rename");
+const imagemin = require('gulp-imagemin');
 const imgCompress = require('imagemin-jpeg-recompress');
-const  plumber = require('gulp-plumber');
-const  cleanCss = require('gulp-clean-css');
-const  sourcemaps = require('gulp-sourcemaps');
-const  uglify = require('gulp-uglify');
+const plumber = require('gulp-plumber');
+const cleanCss = require('gulp-clean-css');
+const sourcemaps = require('gulp-sourcemaps');
+const uglify = require('gulp-uglify');
 const pump = require('pump');
 
 var paths = {
@@ -35,9 +35,9 @@ var paths = {
     watchPlugins: './src/scripts/plugins/*.js'
   },
   images: {
-    src: './src/blocks/**/img/*',
+    src: './src/blocks/**/img/**/*',
     dest: './build/img',
-    watch: ['./src/blocks/**/img/*']
+    watch: ['./src/blocks/**/img/**/*']
   },
   fonts: {
     src: './src/fonts/*',
@@ -57,7 +57,7 @@ gulp.task('templates', function () {
       pretty: true
     }))
     .pipe(gulp.dest(paths.html.dest))
-	.pipe(browserSync.reload({
+    .pipe(browserSync.reload({
       stream: true
     }));
 });
@@ -72,7 +72,7 @@ gulp.task('styles', function () {
     }))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(paths.css.dest))
-	.pipe(browserSync.reload({
+    .pipe(browserSync.reload({
       stream: true
     }));
 });
@@ -97,8 +97,14 @@ gulp.task('images', function () {
       imagemin.gifsicle(),
       imagemin.optipng(),
     ]))
-    .pipe(rename({
-      dirname: ''
+    .pipe(rename(function (path) {
+      console.log(path.dirname)
+      let newDirname = path.dirname.indexOf('\\') > -1
+        ? path.dirname.slice(0, path.dirname.indexOf('\\') + 1)
+        : path.dirname.slice(0, path.dirname.indexOf('\/') + 1)
+      console.log(newDirname)
+      if (path.extname = 'svg') newDirname += 'svg'
+      path.dirname = newDirname
     }))
     .pipe(gulp.dest(paths.images.dest));
 });
@@ -107,7 +113,7 @@ gulp.task('fonts', function () {
   return gulp.src(paths.fonts.src)
     .pipe(plumber())
     .pipe(gulp.dest(paths.fonts.dest))
-	.pipe(browserSync.reload({
+    .pipe(browserSync.reload({
       stream: true
     }));
 });
@@ -127,12 +133,12 @@ gulp.task('server', function () {
 });
 
 gulp.task('build', gulp.series(
-      'clean',
-      'templates',
-      'styles',
-      'scripts',
-      'images',
-      'fonts'
+  'clean',
+  'templates',
+  'styles',
+  'scripts',
+  'images',
+  'fonts'
 ));
 
 gulp.task('dev', gulp.series(
@@ -147,15 +153,15 @@ gulp.task('css:minify', function () {
 
 gulp.task('js:minify', function (cb) {
   pump([
-      gulp.src(paths.js.dest + '/*.js'),
-      uglify(),
-      gulp.dest(paths.js.dest)
-    ],
-  cb
+    gulp.src(paths.js.dest + '/*.js'),
+    uglify(),
+    gulp.dest(paths.js.dest)
+  ],
+    cb
   );
 })
 
 
 gulp.task('prod', gulp.series(
-  'build','css:minify','js:minify'
+  'build', 'css:minify', 'js:minify'
 ))

@@ -1,5 +1,5 @@
 mixin contact(image,text,link='#')
   .contact&attributes(attributes)
     a(href=link target="_blank").contact__content 
-      img(src=`img/${image}.svg` alt="Иконка").contact__image
+      img(src=`contact/svg/${image}.svg` alt="Иконка").contact__image
       p.contact__text=text
